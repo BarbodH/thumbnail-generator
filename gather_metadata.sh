@@ -1,11 +1,13 @@
 #! /usr/bin/env bash
 
-${1:-"./"}
+DIR=${1:-./}
 
-if cd $1 ; then
+if ! cd $DIR ; then
     echo $1 is not a directory. >&2
+    exit 1
 fi
 
-if [ ! [ -r $1 || -x $1 ] ] ; then
+if ! [[ -r $DIR && -x $DIR ]] ; then
     echo $1 is not readable or executable. >&2
+    exit 1
 fi
