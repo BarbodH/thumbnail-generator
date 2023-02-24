@@ -29,6 +29,7 @@ while read image; do
 	declare -i width
 	declare -i max_dim
 
+	echo "$image"
 	height=$(identify -format '%h' "$image")
 	width=$(identify -format '%w' "$image")
 
