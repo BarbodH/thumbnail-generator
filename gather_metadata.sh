@@ -11,7 +11,7 @@ function create_thumbnail {
 	convert "$1" -resize ${dim}x${dim} "$(dirname "$1")/.thumbs/${name}-${dim}.${extension}"
 }
 
-DIR=${1:-./}
+DIR=${1:-"./"}
 
 if ! [ -d $DIR ] ; then
     echo $1 is not a directory. >&2
