@@ -1,0 +1,90 @@
+Image:
+  Filename: ./images/wallpaper.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Mime type: image/jpeg
+  Class: DirectClass
+  Geometry: 1255x700+0+0
+  Units: Undefined
+  Colorspace: sRGB
+  Type: TrueColor
+  Base type: Undefined
+  Endianness: Undefined
+  Depth: 8-bit
+  Channel depth:
+    Red: 8-bit
+    Green: 8-bit
+    Blue: 8-bit
+  Channel statistics:
+    Pixels: 878500
+    Red:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 65.0955 (0.255276)
+      median: 42 (0.164706)
+      standard deviation: 37.8179 (0.148305)
+      kurtosis: 1.14154
+      skewness: 0.945443
+      entropy: 0.884288
+    Green:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 78.4948 (0.307823)
+      median: 44 (0.172549)
+      standard deviation: 39.7937 (0.156054)
+      kurtosis: -0.921344
+      skewness: 0.216269
+      entropy: 0.889836
+    Blue:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 135.752 (0.532359)
+      median: 98 (0.384314)
+      standard deviation: 63.5942 (0.249389)
+      kurtosis: -1.47457
+      skewness: -0.222989
+      entropy: 0.903713
+  Image statistics:
+    Overall:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 93.1139 (0.365153)
+      median: 61.3333 (0.240523)
+      standard deviation: 47.0686 (0.184583)
+      kurtosis: -0.564173
+      skewness: 0.6839
+      entropy: 0.892612
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Matte color: grey74
+  Background color: white
+  Border color: srgb(223,223,223)
+  Transparent color: none
+  Interlace: JPEG
+  Intensity: Undefined
+  Compose: Over
+  Page geometry: 1255x700+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 80
+  Orientation: Undefined
+  Properties:
+    date:create: 2023-02-24T07:01:10+00:00
+    date:modify: 2023-02-24T07:01:10+00:00
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: 14dee48525d9307eefc8adaedcee8f3780161a9a6a982e8e996be5b4cfee3df5
+  Artifacts:
+    verbose: true
+  Tainted: False
+  Filesize: 104637B
+  Number pixels: 878500
+  Pixels per second: 46266900P
+  User time: 0.030u
+  Elapsed time: 0:01.018
+  Version: ImageMagick 7.1.0-27 Q16-HDRI x86_64 2022-02-26 https://imagemagick.org

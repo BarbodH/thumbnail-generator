@@ -8,7 +8,7 @@ function create_thumbnail {
 	fullname=$(basename -- "$1")
 	name="${fullname%.*}"
 	extension="${fullname##*.}"
-	convert $1 -resize ${dim}x${dim} "$(dirname $1)/.thumbnail/${name}-${dim}.${extension}"
+	convert $1 -resize ${dim}x${dim} "$(dirname $1)/.thumbs/${name}-${dim}.${extension}"
 }
 
 DIR=${1:-./}
@@ -40,8 +40,12 @@ while read image; do
 	fi
 
 	# create .thumbnail folder if necessary
-	if [ ! -d "$(dirname $image)/.thumbnail" ]; then
-		mkdir "$(dirname $image)/.thumbnail"
+	if [ ! -d "$(dirname $image)/.thumbs" ]; then
+		mkdir "$(dirname $image)/.thumbs"
+	fi
+
+	if [ ! -d "$(dirname $image)/.metadata" ]; then
+		mkdir "$(dirname $image)/.metadata"
 	fi
 	
 	# create thumbnails based on maximum dimension size
@@ -56,4 +60,7 @@ while read image; do
 	if [ "$max_dim" -gt 512 ]; then
 		create_thumbnail $image 512
 	fi
+
+	# create metadata text file
+	identify -verbose $image >> "$(dirname $image)/.metadata/$(basename -- $image).txt"
 done
