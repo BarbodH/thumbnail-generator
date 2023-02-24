@@ -25,6 +25,8 @@ fi
 
 find $DIR -iregex ".*\.\(jpg\|jpeg\|png\|tif\|tiff\|bmp\|gif\)$" | grep -v ".thumbs" | grep -v ".metadata" | \
 while read image; do 
+	echo ${image:2}
+
 	declare -i height
 	declare -i width
 	declare -i max_dim
