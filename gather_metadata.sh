@@ -13,7 +13,7 @@ function create_thumbnail {
 
 DIR=${1:-./}
 
-if ! cd $DIR ; then
+if ! [ -d "$DIR" ] ; then
     echo $1 is not a directory. >&2
     exit 1
 fi
