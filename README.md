@@ -10,7 +10,7 @@ The script will be called with one optional argument, corresponding to the direc
 <DIR> is not a directory.
 ```
 
-If the argument is a directory but does not have read or execute permissions, the following message should be sent to the standard error (replacing <DIR> with the argument value):
+If the argument is a directory but does not have read or execute permissions, the following message should be sent to the standard error (replacing `<DIR>` with the argument value):
 
 ```Bash
 <DIR> is not readable or executable.
